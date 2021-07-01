@@ -26,6 +26,6 @@ const swiper = new Swiper('.image-slider', {
   loop: true,
   autoplay: {
     delay: 2000,
-    disablleOnInteraction: false,
+    disableOnInteraction: false,
   }
 });
