@@ -345,6 +345,55 @@ header .navbar a:hover {
   margin-top: 2rem;
 }
 
+/* Contact form */
+.contact {
+  background: linear-gradient(#fff 50%, var(--black) 50.1%);
+}
+.contact form {
+  padding: 2rem;
+  background: #fff;
+  box-shadow: 0 .5rem 3rem rgba(0, 0, 0, .1);
+}
+.contact form .input-box {
+  position: relative;
+}
+.contact form .input-box input,
+.contact form .input-box textarea {
+  width: 100%;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  border-bottom: .2rem solid rgba(0, 0, 0, .3);
+  font-size: 1.7rem;
+  text-transform: none;
+}
+.contact form .input-box textarea {
+  resize: none;
+  height: 15rem;
+}
+.contact form .input-box input:focus,
+.contact form .input-box textarea:focus {
+  border-color: var(--red);
+}
+.contact form .input-box label {
+  font-size: 1.7rem;
+  position: absolute;
+  top: 2.3rem;
+  left: 0;
+}
+.contact form .input-box input:focus ~ label,
+.contact form .input-box textarea:focus ~ label,
+.contact form .input-box input:valid ~ label,
+.contact form .input-box textarea:valid ~ label {
+  top: -.4rem;
+  font-size: 1.5rem;
+  color: var(--red);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 /* Media querys */
 @media (max-width: 990px) {
   html {
