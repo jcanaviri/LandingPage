@@ -89,6 +89,105 @@ header .navbar a:hover {
   display: none;
 }
 
+.home {
+  background: url(./images/home-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.home .content {
+  padding-top: 5rem;
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+.home .content h3 {
+  font-size: 6.5rem;
+  color: #fff;
+}
+
+.home .content p {
+  font-size: 1.7rem;
+  color: #eee;
+  padding: 1rem 0;
+}
+
+.home .swiper-container {
+  width: 100%;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.home .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 30rem;
+  height: 50rem;
+}
+
+.home .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Features Section */
+.heading {
+  text-align: center;
+  color: transparent;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 5rem;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+
+.features .box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.features .box-container .box {
+  margin: 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  background: rgba(237, 23, 111, 0.05);
+  padding: 1rem;
+  width: 450px;
+  /* flex:1 1 30rem; */
+  cursor: pointer;
+}
+
+.features .box-container .box i {
+  color: var(--red);
+  font-size: 5rem;
+  padding: 1rem;
+}
+
+.features .box-container .box h3 {
+  color: var(--black);
+  font-size: 2.4rem;
+}
+
+.features .box-container .box p {
+  color: #666;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.features .box-container .box:hover {
+  background: var(--gradient);
+}
+
+.features .box-container .box:hover > * {
+  color: #fff;
+}
+
 /* Media querys */
 @media (max-width: 990px) {
   html {
@@ -135,58 +234,18 @@ header .navbar a:hover {
   }
   .home .content h3 {
     font-size: 2rem;
-   }
-   .home .content p {
-     font-size: 1.5rem;
-   }
+  }
+  .home .content p {
+    font-size: 1.5rem;
+  }
 }
 
 @media (max-width: 400px) {
   html {
     font-size: 50%;
   }
-}
 
-.home {
-  background: url(./images/home-bg.jpg);
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
-  text-align: center;
-}
-
-.home .content {
-  padding-top: 5rem;
-  max-width: 70rem;
-  margin: 0 auto;
-}
-
-.home .content h3 {
-  font-size: 6.5rem;
-  color: #fff;
-}
-
-.home .content p {
-  font-size: 1.7rem;
-  color: #eee;
-  padding: 1rem 0;
-}
-
-.home .swiper-container {
-  width: 100%;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
-.home .swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 30rem;
-  height: 50rem;
-}
-
-.home .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
+  .heading {
+    font-size: 4rem;
+  }
 }
