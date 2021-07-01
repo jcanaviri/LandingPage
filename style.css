@@ -37,7 +37,7 @@ section {
 
 .btn {
   display: inline-block;
-  padding: .7rem 3rem;
+  padding: 0.7rem 3rem;
   margin-top: 1rem;
   border-radius: 5rem;
   background: var(--gradient);
@@ -94,11 +94,14 @@ header .navbar a:hover {
   html {
     font-size: 55%;
   }
-
   header {
     padding: 2rem 4%;
   }
+  section {
+    padding: 3rem 4%;
+  }
 }
+
 @media (max-width: 768px) {
   #menu-bar {
     display: block;
@@ -130,6 +133,12 @@ header .navbar a:hover {
   .fa-times {
     transform: rotate(180deg);
   }
+  .home .content h3 {
+    font-size: 2rem;
+   }
+   .home .content p {
+     font-size: 1.5rem;
+   }
 }
 
 @media (max-width: 400px) {
@@ -148,7 +157,7 @@ header .navbar a:hover {
 
 .home .content {
   padding-top: 5rem;
-  width: 70rem;
+  max-width: 70rem;
   margin: 0 auto;
 }
 
@@ -159,5 +168,25 @@ header .navbar a:hover {
 
 .home .content p {
   font-size: 1.7rem;
-  color: #fff;
+  color: #eee;
+  padding: 1rem 0;
+}
+
+.home .swiper-container {
+  width: 100%;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.home .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 30rem;
+  height: 50rem;
+}
+
+.home .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
